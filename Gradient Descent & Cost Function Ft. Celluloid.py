@@ -35,7 +35,7 @@ def gradient_descent(x,y):
         y_predicted = coeff*x+y_intercept
 
         # calculating mean square error
-        cost = (1/n)*sum([value**2 for value in (y-y_predicted)])
+        cost = (1/n)*np.sum(np.square(y-y_predicted))
 
         # append the cost & iterations in respective list
         cost_lst.append(cost)
